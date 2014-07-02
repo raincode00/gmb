@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <title> Chat Client </title>
+    <link rel="stylesheet" type="text/css" href="css/chatclient.css"></style>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+    <script type="text/javascript" src="js/chatclient.js"></script>
+    <script type="text/template" id="template-chat-message">
+       <p> from: <%- from %></p>
+       <p> message: <%- message %></p>
+    </script>
+</head>
+<body>
+    <div id="chat-messages" class="chat-messages"></div>
+    <div class="chat-send-container">
+        <textarea id="chat-send-textarea" class="chat-send-textarea"></textarea>
+        <button id="chat-send-button"> Submit </button>
+    </div>
+</body>
+</html>
